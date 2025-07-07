@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Zomato Home</title>
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: #f6f5f7;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: #e23744;
+      color: #fff;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    header nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    .hero {
+      background: url('https://source.unsplash.com/1200x400/?food,restaurant') no-repeat center center/cover;
+      color: #fff;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .hero button {
+      background: #fff;
+      color: #e23744;
+      padding: 12px 30px;
+      border: none;
+      font-weight: bold;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+
+    .categories {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 20px;
+      padding: 40px;
+    }
+
+    .category-card {
+      background: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      cursor: pointer;
+    }
+
+    footer {
+      background: #e23744;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+    #bg-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1; /* Make sure it stays in background */
+  object-fit: cover;
+}
+  </style>
+
+</head>
+<body>
+    <!-- Background Video -->
+  
+<video autoplay muted loop id="bg-video">
+  <source src="videoplayback.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+  <header>
+    <div class="logo">ZOMATO</div>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="deserts.html">Menu</a>
+      <a href="cart.js">Cart</a>
+      <a href="tel:+917876784076">Contact</a>  
+      
+    
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Delicious Food Delivered Fast</h1>
+    <button onclick="window.location.href='deserts.html'">Order Now</button>
+  </section>
+  <style>
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+      color: rgb(232, 17, 17);
+    }
+  </style>
+
+  <section class="categories">
+    <div class="category-card" onclick="window.location.href='deserts.html'">🍰 Desserts</div>
+    <div class="category-card" onclick="window.location.href='drink.html'">🥤 Drinks</div>
+
+  </section>
+
+  <footer>
+    &copy; 2025 Zomato . All rights reserved. created by deepu 
+  </footer>
+</body>
+</html>

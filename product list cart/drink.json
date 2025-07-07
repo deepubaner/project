@@ -1,0 +1,102 @@
+[
+  {
+    "image": {
+      "thumbnail": "espresso.jpg",
+      "mobile": "",
+      "tablet": "",
+      "desktop": "espresso.jpg"
+    },
+    "name": "espresso",
+    "category": "coffee",
+    "price": 15
+  },
+  {
+    "image": {
+      "thumbnail": "iced latte.jpg",
+      "mobile": "",
+      "tablet": "",
+      "desktop": "iced latte.jpg"
+    },
+    "name": "ice latte",
+    "category": "Coffee",
+    "price": 30
+  },
+  {
+    "image": {
+      "thumbnail": "cappucino.jpg",
+      "mobile": "",
+      "tablet": "",
+      "desktop": "cappucino.jpg"
+    },
+    "name": "cappuciano",
+    "category": "coffee",
+    "price": 400
+  },
+  {
+    "image": {
+      "thumbnail": "dopio.jpg",
+      "mobile": "",
+      "tablet": "",
+      "desktop": "dopio.jpg"
+    },
+    "name": "dopio",
+    "category": "coffee",
+    "price":23
+  },
+  {
+    "image": {
+      "thumbnail": "americano.jpg",
+      "mobile": "",
+      "tablet": "",
+      "desktop": "americano.jpg"
+    },
+    "name": "americano",
+    "category": "coffee",
+    "price": 5.5
+  },
+  {
+    "image": {
+      "thumbnail": "glace coffee.jpg",
+      "mobile": "",
+      "tablet": "",
+      "desktop": "glace coffee.jpg"
+    },
+    "name": "glace coffee",
+    "category": "coffee",
+    "price": 56
+  },
+  {
+    "image": {
+      "thumbnail": "chocolate coffee.jpg",
+      "mobile": "",
+      "tablet": "",
+      "desktop": "chocolate coffee.jpg"
+    },
+    "name": "chocolate coffee",
+    "category": "coffee",
+    "price": 6
+  },
+  {
+    "image": {
+      "thumbnail": "marrochino.jpg",
+      "mobile": "",
+      "tablet": "",
+      "desktop": "marrochino.jpg"
+    },
+    "name": "marrochino",
+    "category": "coffee",
+    "price": 7.0
+  },
+  {
+    "image": {
+      "thumbnail": "cold brew.jpg",
+      "mobile": "",
+      "tablet": "",
+      "desktop": "cold brew.jpg"
+    },
+    "name": "cold brew",
+    "category": "coffee",
+    "price": 44
+  }
+]
+

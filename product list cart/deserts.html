@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="images"
+      sizes="32x32"
+      href="favicon-32x32.png"
+    />
+    <header class="head">
+      <h2> ZOMATO</h2>
+    </header>
+
+    <title>Frontend Mentor | Product list with cart</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Desserts</h1>
+      <nav>
+      <a href="home.html">Home</a>
+      <a href="deserts.html">Menu</a>
+      <a href="drink.html">Cart</a>
+       <a href="tel:+917876784076">Contact</a>  
+    
+    </nav>
+    </header>
+    <main>
+      <section id="product-list"></section>
+
+      <!-- <section id="cart-section">
+        <h1 id="cart-text">Your Cart <span id="cart-text-number">(0)</span></h1>
+        <div id="cart">
+          <img
+            src="illustration-empty-cart.svg"
+            alt="illustration-empty-cart"
+          />
+          <p>Your added items would appear here</p>
+        </div>
+      </section> -->
+    </main>
+
+    <div class="modal-overlay" id="modal-overlay">
+      <div id="order-modal" class="modal hidden">
+        <div class="modal-content">
+          <img
+            src="icon-order-confirmed.svg"
+            alt="icon-order-confirmed"
+          />
+
+          <h2>Order Confirmed</h2>
+          <p>we hope you enjoy your food</p>
+          <div class="order-details" id="order-details"></div>
+          <button id="start-new-order-btn">Start New Order</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
