@@ -2,7 +2,17 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useCart } from "./context/CartContext";
 import CartSidebar from "./components/CartSidebar";
-import { Link } from "react-router-dom"; 
+import { Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ContactPage from "./pages/ContactPage"; // or wherever your home page is
+
+<Router>
+  <Routes>
+    {/* <Route path="/" element={<HomePage />} /> */}
+    <Route path="/contact" element={<ContactPage />} />
+  </Routes>
+</Router>
+
 
 function App() {
   const [restaurants, setRestaurants] = useState([]);
@@ -30,7 +40,19 @@ function App() {
         <img src="logo.jpg" alt="FoodStack Logo" style={{borderRadius:"50%" ,width: "50px", marginBottom: "1rem", margin:"10px"}} />
       <h1 style={{ marginBottom: "1rem" }}> FoodStack  <Link to="/">
     <button style={{ marginLeft: 20,borderRadius:"50%" ,padding: "6px 12px",background: "#e23744", color: "#fff", cursor:"pointer"}}>Login</button>
-  </Link></h1></div>
+  </Link></h1>
+  
+<Link to="/contact">
+  <button
+    style={{
+   marginLeft: 20 ,padding: "6px 12px",background: "#e23744", color: "#fff", cursor:"pointer",marginTop: "30px", borderRadius: "6px", border: "none", fontSize: "16px"
+    }}
+  >
+    Contact
+  </button>
+</Link>
+
+  </div>
 
 
       <div style={{ marginBottom: "1.5rem", display: "flex", gap: "1rem" }}>

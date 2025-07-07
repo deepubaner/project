@@ -1,11 +1,7 @@
-// backend/routes/restaurantRoutes.js
 const express = require('express');
 const router  = express.Router();
 const Restaurant = require('../models/Restaurant');
 
-/* -------------------------------------------------------
-   GET /api/restaurants       → all restaurants
--------------------------------------------------------- */
 router.get('/', async (req, res) => {
   try {
     const restaurants = await Restaurant.find();
@@ -15,9 +11,6 @@ router.get('/', async (req, res) => {
   }
 });
 
-/* -------------------------------------------------------
-   GET /api/restaurants/:id   → single restaurant by ID
--------------------------------------------------------- */
 router.get('/:id', async (req, res) => {
   try {
     const rest = await Restaurant.findById(req.params.id);
@@ -28,10 +21,6 @@ router.get('/:id', async (req, res) => {
   }
 });
 
-/* -------------------------------------------------------
-   POST /api/restaurants      → add a new restaurant
-   (Send JSON body with name, image, location, rating, foodTypes[])
--------------------------------------------------------- */
 router.post('/', async (req, res) => {
   try {
     const created = await Restaurant.create(req.body);

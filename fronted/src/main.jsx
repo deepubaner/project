@@ -5,6 +5,7 @@ import App from "./App";
 import Restaurant from "./pages/Restaurant";
 import Login from "./pages/Login"; // ✅ new import
 import { CartProvider } from "./context/CartContext";
+import Contact from "./pages/ContactPage"; 
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -14,6 +15,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
             <Route path="/" element={<Login />} />
             <Route path="/home" element={<App />} />
           <Route path="/restaurant/:id" element={<Restaurant />} />
+                <Route path="/contact" element={<Contact />} /> 
          {/* ✅ added */}
         </Routes>
       </BrowserRouter>

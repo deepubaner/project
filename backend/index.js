@@ -7,12 +7,15 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// ✅ THIS LINE IS MISSING — YOU MUST ADD THIS:
+// Import routes:
 const restaurantRoutes = require('./routes/restaurantRoutes');
 app.use('/api/restaurants', restaurantRoutes);
 // new
 const orderRoutes = require('./routes/orderRoutes');
 app.use('/api/orders', orderRoutes);
+const authRoutes = require("./routes/authRoutes");
+app.use("/api/auth", authRoutes); // ✅ Make sure this path matches your frontend
+
 
 
 mongoose.connect(process.env.MONGO_URI)
